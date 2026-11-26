@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><title>The Coaching Club</title><meta name="robots" content="noindex">
+<script>
+(function(){
+  var p=location.pathname, base="/";
+  if(p.indexOf("/coachingclubuk/")===0){base="/coachingclubuk/";p=p.slice(base.length-1);}
+  var map={"1-2-1-personal-training":"training","home-personal-training":"prices","meet-our-trainers":"coaches","packages":"prices","results":"results","reviews":"reviews","contact":"book","store":"prices","start":"book"};
+  var seg=p.replace(/^\/+/,"").split("/")[0].toLowerCase();
+  location.replace(base+(map[seg]?"#"+map[seg]:""));
+})();
+</script></head>
+<body><p>This page has moved. <a href="/">Go to The Coaching Club</a>.</p></body></html>
